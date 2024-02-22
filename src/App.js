@@ -8,6 +8,7 @@ import cleanser from './cleanser.png'
 
 const App = () => {
   const [remainingSeconds, setRemainingSeconds] = useState(59);
+  const [maxSec, setMaxSec] = useState(60);
 
   useEffect(() => {
     const timeTimeout = setTimeout(() => {
@@ -29,7 +30,7 @@ const App = () => {
 
   const handleButtonClick = () => {
     if(remainingSeconds>=0 && remainingSeconds<=49 )
-    setRemainingSeconds((prevSeconds) => (prevSeconds < 50 ? prevSeconds + 10 : prevSeconds));
+    setRemainingSeconds(remainingSeconds + 10);
   };
 
   const handleButtonClickS = () => {
@@ -51,7 +52,7 @@ const App = () => {
             trailColor: '#d6d6d6',
             pathTransitionDuration: 0,
           })}
-          maxValue={60}
+          maxValue={maxSec}
         />
 
         
