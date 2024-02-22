@@ -69,7 +69,7 @@
 .sub-t1, .sub-t2, .sub-t3{
   border: 2px solid white;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 50px;
   margin-top: 10px;
   padding-top: 15px;
   padding-left: 15px;
@@ -128,4 +128,11 @@
     color: #701170;
     margin-left: 50px;
   }  
+}
+
+
+.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

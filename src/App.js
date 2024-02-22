@@ -41,9 +41,10 @@ const App = () => {
     <div className=''>
       <label className='routine'>Routine starting in ...</label>
       <label className='sub-head'>Subheading here</label>
-      <div className='progress-bar'>
+      <div className='progress-bar circle'>
       
         <CircularProgressbar
+        className='circle'
           value={remainingSeconds}
           text={formatTime(remainingSeconds)}
           styles={buildStyles({
@@ -54,7 +55,6 @@ const App = () => {
           })}
           maxValue={maxSec}
         />
-
         
         </div>
         <div className='buttons'>
