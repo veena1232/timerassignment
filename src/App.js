@@ -25,11 +25,11 @@ const App = () => {
     const minutes = Math.floor(seconds / 60);
     const formattedMinutes = minutes.toString().padStart(2, '0');
     const formattedSeconds = (seconds % 60).toString().padStart(2, '0');
-    return `${formattedMinutes}:${formattedSeconds}`;
+    return `${formattedMinutes}:${formattedSeconds}`
   };
 
   const handleButtonClick = () => {
-    if(remainingSeconds>=0 && remainingSeconds<=49 )
+    if(remainingSeconds>=0 && remainingSeconds<=49)
     setRemainingSeconds(remainingSeconds + 10);
   };
 
@@ -54,6 +54,7 @@ const App = () => {
             pathTransitionDuration: 0,
           })}
           maxValue={maxSec}
+          counterClockwise={true}
         />
         
         </div>
@@ -80,9 +81,7 @@ const App = () => {
   </div>
 </div>
 </div>
-
-    
-  );
+);
 }
 
 export default App
