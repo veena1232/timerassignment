@@ -66,7 +66,7 @@
 }
 
 
-.sub-t1, .sub-t2{
+.sub-t1{
   border: 2px solid white;
   background-color: white;
   border-radius: 50px;
@@ -74,6 +74,23 @@
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 5px 8px 0 grey, 0 5px 5px 0 grey;
+  font-size: 18px;
+  font-weight: 500;
+  color: #701170;
+
+}
+
+
+.sub-t2{
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 50px;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 15px;
   box-shadow: 0 5px 8px 0 grey, 0 5px 5px 0 grey;
   font-size: 18px;
